@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="de">
-
-	<nav>
-		<ul>
-
-		</ul>
-	</nav>
-
 	<head>
 		<meta charset="utf-8">
 		<title>Frontend-Development - Aufgabe 1</title>
+		<link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+		<link rel="stylesheet" type="text/css" href="../styles/variables.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
+
+		<nav>
+			<div class="row">
+				<img id="th-logo" src="../_data/images/TH_Koeln_Logo.svg" alt="Logo der Technischen Hochschule Köln">
+				<div class="col-right">
+					<ul>
+						<li class="active"> <a href="design-principles.html">Design Methods</a> </li>
+						<li> <a href="design-methods.html">Design Methods</a> </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
     <header class="container">
       <h1>
         Design Principles
@@ -30,16 +41,14 @@
 
       <div class="row">
 
-        <div class="col-left"></div>
-	        <div class="col-right">
-	          <h2>
+	      <div class="col-right">
+	        <h2>
 	          User Experience Design
-	        	</h2>
-					</div>
-      	</div>
+	        </h2>
+				</div>
 
         <div class="col-left">
-          <p>
+          <p class="marginalie">
             <strong>Don Norman</strong><br>
             Director of the Design Lab at the Uni- versity of California and co-founder of Nielsen Norman Group. (JND, N.D.)
           </p>
@@ -62,7 +71,6 @@
 
       <div class="row">
 
-        <div class="col-left"></div>
         <div class="col-right">
           <p>
             User experience captures everything a user experiences while using a given product, from the visuals, the haptics, and the audio to how the product feels. User experience of a product comprises three primary factors: its look, feel, and usability (IXDF - UX DESIGN, N.D.) (→ FIG. 04).
@@ -128,51 +136,52 @@
 
       </section>
 
-			<footer>
-				<form id="formular" class="" action="iputFile.html" method="post" enctype="multipart/form-data">
-
-					<h2>Ihr Kommentar</h2>
-
-					<fieldset>
-
-						<legend>Kontaktdaten</legend>
-
-						<label for="name">Name:</label>
-						<input id="name" type="text" name="name" placeholder="Ada"> <input id="name" type="text" name="name" placeholder="Lovlace"><br>
-
-						<label for="email">smail-Adresse:</label>
-						<input class="emailLabel" id="email" type="email" name="email" placeholder="ada.lovelace@smail.th-koeln.de" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@smail.th-koeln.de$"><br>
-
-					</fieldset>
-
-					<fieldset>
-
-						<legend>Profilbild</legend>
-						<label for="file">Datei:</label>
-						<input type="file" name="file" value="">
-
-					</fieldset>
-
-					<fieldset>
-						<legend>Datenschutz</legend>
-						<p>Soll der Kommentar anonym gesendet werden?</p>
-						<input id="yes" type="radio" name="anonym" value="y"><label for="yes">Ja</label>
-						<input id="no" type="radio" name="anonym" value="n"><label for="no">Nein</label>
-						<input id="maybe" type="radio" name="anonym" value="m"><label for="maybe">Vielleicht</label>
-
-						<p>Datenschutzerklärung</p>
-						<input id="ds" type="checkbox" name="ds" value="ds"><label for="ds" class="longLabel">Ich habe die Datenschutzerklärung nicht gelesen, stimme aber trotzdem zu.</label>
-
-					</fieldset>
-
-					<button type="reset" name="reset">Zürucksetzen</button>
-					<button type="submit" name="submit">Senden</button>
-
-				</form>
-
-			</footer>
 
     </article>
+
+		<footer>
+			<form class="container" id="formular" class="" action="iputFile.html" method="post" enctype="multipart/form-data">
+
+				<h2>Ihr Kommentar</h2>
+
+				<fieldset>
+
+					<legend>Kontaktdaten</legend>
+
+					<label for="name">Name:</label>
+					<input id="name" type="text" name="name" placeholder="Ada"> <input id="name" type="text" name="name" placeholder="Lovelace"><br>
+
+					<label for="email">smail-Adresse:</label>
+					<input class="emailLabel" id="email" type="email" name="email" placeholder="ada.lovelace@smail.th-koeln.de" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@smail.th-koeln.de$"><br>
+
+				</fieldset>
+
+				<fieldset>
+
+					<legend>Profilbild</legend>
+					<label for="file">Datei:</label>
+					<input type="file" name="file" value="">
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Datenschutz</legend>
+					<p>Soll der Kommentar anonym gesendet werden?</p>
+					<input id="yes" type="radio" name="anonym" value="y"><label for="yes">Ja</label>
+					<input id="no" type="radio" name="anonym" value="n"><label for="no">Nein</label>
+					<input id="maybe" type="radio" name="anonym" value="m"><label for="maybe">Vielleicht</label>
+
+					<p>Datenschutzerklärung</p>
+					<input id="ds" type="checkbox" name="ds" value="ds"><label for="ds" class="longLabel">Ich habe die Datenschutzerklärung nicht gelesen, stimme aber trotzdem zu.</label>
+
+				</fieldset>
+
+				<button type="reset" name="reset">Zürucksetzen</button>
+				<button type="submit" name="submit">Senden</button>
+
+			</form>
+
+		</footer>
 
 	</body>
 
