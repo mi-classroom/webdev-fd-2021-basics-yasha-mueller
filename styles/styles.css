@@ -1,0 +1,209 @@
+/* == GENERAL == */
+
+body {
+  font-family: var(--std-font);
+  font-size: var(--m);
+  line-height: var(--l);
+}
+
+h1 {
+  font-size: var(--xxl);
+  font-weight: bold;
+  margin-top: 64px;
+  margin-bottom: var(--m);
+}
+
+h2 {
+  font-size: var(--l);
+  font-weight: bold;
+}
+
+section {
+  margin: 64px 0;
+}
+
+figure {
+  margin-bottom: 32px;
+}
+
+p {
+  margin: 12px 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.marginalie {
+  line-height: var(--s);
+}
+
+/* == NAV == */
+
+footer {
+  background-color: var(--gray-light);
+  padding: 64px 0;
+}
+
+nav {
+  height: 128px;
+  border-bottom: 2px solid var(--gray-light);
+}
+
+nav ul {
+  position: relative;
+  top: 40px;
+  right:48px;
+  padding:0;
+  float:right;
+  height:100%;
+}
+
+nav ul > li {
+  display:inline-block;
+  margin-left:.5rem;
+  height:100%;
+  width: 160px;
+  text-align: center;
+  padding: var(--xs);
+  border-radius: 8px;
+}
+
+nav a {
+  font-size: var(--m);
+  font-weight: black;
+  text-decoration: none;
+  color: #000;
+}
+
+.active {
+  background-color: var(--gray-light);
+}
+
+#th-logo {
+  position: relative;
+  left: 48px;
+  top: 32px;
+  height: 64px;
+  width: auto;
+}
+
+/* == TEXT == */
+
+blockquote {
+  display: inline-XIblock;
+  padding-left: 0;
+  margin-left: 0;
+  font-style: italic;
+  font-weight: bold;
+  color: #DD0;
+}
+
+figcaption {
+  color: #AAA;
+  font-weight: bold;
+}
+
+/* == DEFINITION-LIST == */
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 16px 0;
+}
+
+
+/* == TABLE == */
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  width: 256px;
+  vertical-align: top;
+  padding: 8px;
+  border: 1px solid #000;
+}
+
+/* == FORM == */
+
+button {
+  margin: 8px 1px;
+}
+
+label {
+  width: 8em;
+  display: inline-block;
+  margin: 4px 0px;
+}
+
+input {
+  margin-right: 12px;
+  border-radius: 8px;
+  font-size: var(--s);
+  padding: .2rem .4rem;
+  margin-bottom: 8px;
+}
+
+.emailLabel {
+  width: 23em;
+}
+
+fieldset {
+  margin: 16px 1px;
+  padding: 8px 16px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.longLabel {
+  width: auto;
+}
+
+/* == GRID-SYSTEM == */
+
+.container {
+  width: 70%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.row::after {
+  content:"";
+  clear:both;
+  display:block;
+}
+
+[class*='col-'] {
+  min-height:1px;
+  padding: 0 .4rem 0 0;
+}
+
+.col-left {
+  width:12%;
+  float:left;
+  padding-right: 4%;
+  font-size: .8rem;
+}
+
+.col-right {
+  float: right;
+  width:82%;
+}
+
+@media (max-width: 768px) {
+
+  .col-left {
+    width: 100%;
+  }
+
+  .col-right {
+    width: 100%;
+  }
+
+}
